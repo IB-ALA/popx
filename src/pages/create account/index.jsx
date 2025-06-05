@@ -26,7 +26,9 @@ const CreateAccountPage = () => {
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>
-      <h2>Create your PopX account</h2>
+      <h2>
+        Create your <br /> PopX account
+      </h2>
       <InputField
         label="Full Name"
         name="fullName"
@@ -67,7 +69,7 @@ const CreateAccountPage = () => {
           Are you an Agency?<span className="required">*</span>
         </label>
         <div className="radio-group">
-          <label>
+          <label className="custom-radio">
             <input
               type="radio"
               name="isAgency"
@@ -75,9 +77,10 @@ const CreateAccountPage = () => {
               checked={formData.isAgency === "yes"}
               onChange={handleChange}
             />
+            <span class="radio-mark"></span>
             Yes
           </label>
-          <label>
+          <label className="custom-radio">
             <input
               type="radio"
               name="isAgency"
@@ -85,6 +88,7 @@ const CreateAccountPage = () => {
               checked={formData.isAgency === "no"}
               onChange={handleChange}
             />
+            <span class="radio-mark"></span>
             No
           </label>
         </div>
