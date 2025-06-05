@@ -1,4 +1,5 @@
 import React from "react";
+import profilePicture from "../../assets/profile_picture.jpeg";
 
 const Home = () => {
   return (
@@ -7,11 +8,7 @@ const Home = () => {
 
       <div className="account-section">
         <div className="profile-card">
-          <img
-            className="profile-image"
-            src="https://via.placeholder.com/80"
-            alt="User"
-          />
+          <img className="profile-image" src={profilePicture} alt="User" />
           <div className="profile-info">
             <h4 className="profile-name">Marry Doe</h4>
             <p className="profile-email">Marry@Gmail.Com</p>
